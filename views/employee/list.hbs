@@ -1,0 +1,27 @@
+<a href="/employee/add">Add</a>
+<div class="table-responsive">
+  <table class="table ">
+    <thead>
+      <tr>
+        <th>fullName</th>
+        <th>email</th>
+        <th>mobile</th>
+        <th>city</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each list}}
+      <tr>
+        <td>{{this.fullName}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.mobile}}</td>
+        <td>{{this.city}}</td>
+        <td>
+          <a href="/employee/edit/{{this._id}}">Edit</a>
+          <a href="/employee/delete/{{this._id}}">Del</a>
+        </td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
