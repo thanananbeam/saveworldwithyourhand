@@ -1,5 +1,5 @@
 .covid-dashboard {
-  background-color: #fafafa;
+  background-color: #eee;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -38,4 +38,103 @@
 .icons .advice .fas {
   font-size: 30px;
   animation: anim 2s forwards;
+}
+
+
+
+.container-covid .country {
+  border: 1px solid #546E7A;
+  margin: 20px 0;
+
+  box-shadow: 3px 3px 5px #ccc;
+  width: 300px;
+  font-size: 0.9em;
+}
+
+.container-covid .header {
+  background: #607D8B;
+  color: white;
+  padding: 4px 8px;
+}
+
+.container-covid .content {
+  padding: 4px 8px;
+}
+
+.container-covid .yd {
+  color: gray;
+  font-size: 0.8em;
+  padding-left: 6px;
+}
+
+.container-covid .change {
+  color: gray;
+  font-size: 0.8em;
+  padding-left: 6px;
+}
+
+@media only screen and (min-width: 640px) {
+  .container-covid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 640px;
+  }
+
+  .container-covid .country {
+    margin: 10px;
+  }
+
+  .control-panel-inner {
+    width: 400px;
+  }
+
+  .control-panel .sort-by {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .container-covid {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.container-sorth .heading-covid {
+  background: #263238;
+  padding: 18px;
+  color: white;
+}
+
+.container-sorth .heading-covid h1 {
+  font-size: 24px;
+  text-align: center;
+  margin: 0 0 6px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.container-sorth .control-panel {
+  background: #CFD8DC;
+  padding: 12px;
+  font-size: 0.8em;
+  position: sticky;
+  top: 0;
+}
+
+.container-sorth .control-panel-inner {
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  margin: auto;
+}
+
+.container-sorth .control-panel .sort-by {
+  font-weight: 700;
+  display: none;
+}
+
+.container-sorth .control-panel input {
+  margin-right: 3px;
 }

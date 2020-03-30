@@ -26,10 +26,34 @@
   </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid container-sorth">
   <div class="row">
-    <div class="col-xs-12 col-sm-12">
-      asds
+    <div class="heading-covid text-center">
+      <h1>Covid-19 latest data</h1>
+      <span id="date"></span>
+    </div>
+    <div class="control-panel">
+      <div class="control-panel-inner">
+        <div class="sort-by">Sort by:</div>
+        <div>
+          <input type="radio" id="country" name="sort-order" value="country" checked>
+          <label for="country">Country</label>
+        </div>
+        <div>
+          <input type="radio" id="cases" name="sort-order" value="cases">
+          <label for="cases">Cases</label>
+        </div>
+        <div>
+          <input type="radio" id="deaths" name="sort-order" value="deaths">
+          <label for="deaths">Deaths</label>
+        </div>
+        <div>
+          <input type="radio" id="recovered" name="sort-order" value="recovered">
+          <label for="recovered">Recovered</label>
+        </div>
+      </div>
     </div>
   </div>
 </div>
+
+<div class="container-covid"></div>
