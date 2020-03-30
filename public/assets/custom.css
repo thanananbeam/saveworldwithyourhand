@@ -1,3 +1,19 @@
 .navbar-new {
   margin-bottom: 0px;
+  background: #263238;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-new .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-new .navbar-brand {
+  color: #fff;
+}
+
+.navbar-new .navbar-nav>li>a:focus,
+.navbar-new .navbar-nav>li>a:hover {
+  color: #CFD8DC;
 }

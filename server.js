@@ -7,6 +7,7 @@ const bodyparse = require('body-parser')
 
 const employeeController = require('./controllers/employeeController')
 const homeController = require('./controllers/homeController')
+const covidController = require('./controllers/covidController')
 
 
 var app = express();
@@ -29,8 +30,9 @@ app.listen(3000, () => {
   console.log('express server started at port : 3000')
 })
 
-
+// Register app
 app.use('/home', homeController)
+app.use('/covid', covidController)
 app.use('/employee', employeeController)
 
 
