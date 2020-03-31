@@ -7,7 +7,9 @@ const bodyparse = require('body-parser')
 
 const employeeController = require('./controllers/employeeController')
 const homeController = require('./controllers/homeController')
-const covidController = require('./controllers/covidController')
+const poloController = require('./controllers/poloController') // คืออะไร?
+const covidController = require('./controllers/covidController') 
+
 
 
 var app = express();
@@ -32,6 +34,7 @@ app.listen(3000, () => {
 
 // Register app
 app.use('/home', homeController)
+app.use('/polo', poloController) // คืออะไร?
 app.use('/covid', covidController)
 app.use('/employee', employeeController)
 
