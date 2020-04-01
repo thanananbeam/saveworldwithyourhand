@@ -9,7 +9,7 @@ const employeeController = require('./controllers/employeeController')
 const homeController = require('./controllers/homeController')
 const poloController = require('./controllers/poloController') // คืออะไร?
 const covidController = require('./controllers/covidController') 
-
+const mentController = require('./controllers/mentController')
 
 
 var app = express();
@@ -37,6 +37,7 @@ app.use('/home', homeController)
 app.use('/polo', poloController) // คืออะไร?
 app.use('/covid', covidController)
 app.use('/employee', employeeController)
+app.use('/ment', mentController)
 
 
 //default
