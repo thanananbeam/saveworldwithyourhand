@@ -1,5 +1,61 @@
-.jumbotron h1.sayhelloworld{
-    font-size: 90px;
+body{
+    background-color: #DCDCDC ;
+}
+
+#back{
+  width: 130px;
+  background: whitesmoke;
+  border: dodgerblue;
+  padding: 5px;
+  position: fixed;
+  top: 5px;
+  right: 5px;
+  z-index: 20000;
+}
+
+.submenu{
+  display: block;
+  padding: 11px 10px 11px 10px;
+  background-color: #eeeeee;
+}
+
+.column {
+    float: left;
+    padding: 10px;
+  }
+  
+  /* Left and right column */
+.column.menu {
+    width: 25%;
+  }
+  
+  /* Middle column */
+.column.middle {
+    width: 50%;
+    font-weight: bold;
+  }
+  
+
+.column.middle h2 {
+    font-size: 40px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    line-height: 1.5;
+  }
+  
+
+  .row {
+    margin: 20px;
 }
 
 
+
+.footer {
+    background-color: #CDC9C9;
+    padding: 10px;
+    text-align: center;
+  }
