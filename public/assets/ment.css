@@ -1,0 +1,39 @@
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+}
+body{
+    background: rgb(171,171,171);
+    background: linear-gradient(180deg, rgba(171,171,171,1) 0%, rgba(101,99,99,1) 35%, rgba(71,70,70,1) 100%);
+}
+
+.header-top{
+    padding: 2rem 0;
+}
+
+.header-top h1{
+    color: rgb(73, 73, 73);
+}
+
+ul.menu {
+    margin-top: 1rem;
+    display: flex;
+    list-style: none;
+}
+
+ul.menu li{
+    margin-right: 2rem;
+    font-size: 12px;
+}
+
+ul.menu li a{
+    color: rgb(218, 218, 218);
+    text-decoration: none;
+    transition: .3;
+    border-bottom: 2px solid # ;
+}
+
+ul.menu li a:hover{
+    color: rgb(255, 255, 255);
+}
