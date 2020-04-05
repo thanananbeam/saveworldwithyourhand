@@ -17,3 +17,7 @@
 .navbar-new .navbar-nav>li>a:hover {
   color: #CFD8DC;
 }
+
+.mainapp {
+  position: relative;
+}
