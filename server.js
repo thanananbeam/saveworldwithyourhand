@@ -1,6 +1,5 @@
 require('./models/db')
 
-const cool = require('cool-ascii-faces')
 const express = require('express')
 const path = require('path')
 const exphbs = require('express-handlebars')
@@ -29,9 +28,11 @@ app.engine('hbs', exphbs({
 
 app.set('view engine', 'hbs')
 
-app.listen(3000, () => {
-  console.log('express server started at port : 3000')
+var port = process.env.PORT
+app.listen(port, () => {
+  console.log('express server started at port : ${port}')
 })
+
 
 // Register app
 app.use('/home', homeController)
@@ -42,7 +43,6 @@ app.use('/ment', mentController)
 
 
 //default
-// app.get('/', function (req, res) {
-//   res.redirect('/home/index');
-// });
-app.get('/cool', (req, res) => res.send(cool()))
+app.get('/', function (req, res) {
+  res.redirect('/home/index');
+});
