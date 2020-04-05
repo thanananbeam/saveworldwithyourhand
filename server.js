@@ -1,5 +1,6 @@
 require('./models/db')
 
+const cool = require('cool-ascii-faces')
 const express = require('express')
 const path = require('path')
 const exphbs = require('express-handlebars')
@@ -8,7 +9,7 @@ const bodyparse = require('body-parser')
 const employeeController = require('./controllers/employeeController')
 const homeController = require('./controllers/homeController')
 const poloController = require('./controllers/poloController') // คืออะไร?
-const covidController = require('./controllers/covidController') 
+const covidController = require('./controllers/covidController')
 const mentController = require('./controllers/mentController')
 
 
@@ -41,6 +42,7 @@ app.use('/ment', mentController)
 
 
 //default
-app.get('/', function (req, res) {
-  res.redirect('/home/index');
-});
+// app.get('/', function (req, res) {
+//   res.redirect('/home/index');
+// });
+app.get('/cool', (req, res) => res.send(cool()))
