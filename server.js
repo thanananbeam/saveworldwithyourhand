@@ -10,6 +10,7 @@ const homeController = require("./controllers/homeController");
 const poloController = require("./controllers/poloController"); // คืออะไร?
 const covidController = require("./controllers/covidController");
 const mentController = require("./controllers/mentController");
+const gameController = require("./controllers/gameController");
 
 var app = express();
 app.use(
@@ -43,6 +44,7 @@ app.use("/polo", poloController); // คืออะไร?
 app.use("/covid", covidController);
 app.use("/employee", employeeController);
 app.use("/ment", mentController);
+app.use("/game", gameController);
 
 //default
 app.get("/", function (req, res) {
