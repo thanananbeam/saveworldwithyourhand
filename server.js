@@ -35,7 +35,7 @@ app.set("view engine", "hbs");
 
 var port = process.env.PORT || 5000;
 app.listen(port, () => {
-  console.log("express server started at port : ${port}");
+  console.log(`express server started at port : ${port}`);
 });
 
 // Register app
