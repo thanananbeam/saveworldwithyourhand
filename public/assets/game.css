@@ -1,0 +1,14 @@
+body {
+    background-color: white;
+  }
+.class-game .list-game{
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .class-game .list-game{
+        margin: 0 auto;
+        
+    }
+}
